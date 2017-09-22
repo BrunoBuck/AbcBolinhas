@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 
 
-<project name="exemplo para build no jenkins">
+<project name="AbcBolinhas">
 <path id="tests.classpath" path=".">
 <fileset dir="lib/">
 <include name="*.jar" />
@@ -34,6 +34,6 @@ and open the template in the editor.
 </junit>
 </target>
 <target name="jar" depends="test">
-<jar destfile="target/jenkins-exemplo.jar" basedir="target/classes/" />
+<jar destfile="target/AbcBolinhas.jar" basedir="target/classes/" />
 </target>
 </project>
