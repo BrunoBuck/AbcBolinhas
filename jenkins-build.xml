@@ -18,7 +18,7 @@ and open the template in the editor.
 <mkdir dir="target/classes/"/>
 <mkdir dir="target/classes-test/"/>
 <javac destdir="target/classes/" srcdir="src/" debug="true" encoding="UTF-8" includeantruntime="false" />
-<javac destdir="target/classes-test/" srcdir="test/" classpathref="tests.classpath" debug="true" encoding="UTF-8" includeantruntime="false" />
+<javac destdir="target/classes-test/" srcdir="test/abcbolinhas/" classpathref="tests.classpath" debug="true" encoding="UTF-8" includeantruntime="false" />
 </target>
 
 <target name="test" depends="compile">
@@ -28,7 +28,7 @@ and open the template in the editor.
 <classpath refid="tests.classpath" />
 <batchtest fork="yes" todir="${artifacts.dir}/reports">
 <fileset dir="target/classes-test/" >
-<include name="**/*Test.java" />
+<include name="**/*Test.class" />
 </fileset>
 </batchtest>
 </junit>
